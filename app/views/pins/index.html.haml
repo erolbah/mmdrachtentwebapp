@@ -1,0 +1,18 @@
+- if user_signed_in?
+	#pins.transitions-enabled
+		- 	@pins.each do |pin|
+			.box.panel.panel-default
+				= link_to (image_tag pin.image.url), pin
+				.panel-body
+					%h2= link_to pin.title, pin	
+- else 
+	.row
+	.col-md-6.col-md-offset-3
+		.panel.panel-default
+			.panel-heading
+				%h1 Welkom bij de Media Markt WA!
+			.panel-body
+				%p
+					Om gebruik te kunnen maken van de App en je rooster te kunnen bekijken moet je eerst jezelf registreren of inloggen.
+				= link_to "Log In", new_user_session_path, class: "btn btn-primary"
+				= link_to "Registreer", new_user_registration_path, class: "btn btn-default"
