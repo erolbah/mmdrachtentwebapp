@@ -34,6 +34,10 @@ set :rails_env, 'production'
 set :branch, 'master'
 
 
+# set :default_env, {
+# 	'SECRET_KEY_BASE': '1ca7d0c8c6e8a548279d327b769d8a33412e329daef6cf3f435190c001f2cc88928205d8ac4e2d420eb25aa256596e23fd684d6497aa980976f4e8363d5d3095'
+# }
+
 # Custom SSH Options
 # ==================
 # You may pass any option but keep in mind that net/ssh understands a
