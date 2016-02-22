@@ -1,21 +1,18 @@
 # config valid only for current version of Capistrano
-lock '3.3.5'
+lock '3.4.0'
 
-set :application, 'mmdrachtenwebapp'
-set :repo_url, 'git@example.com:me/my_repo.git'
-
-set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/secrets.yml')
-set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'public/uploads')
-set :rvm_ruby_version, '2.2.1'
-set :passenger_environment_variables, { :path => '/path-to-passenger/bin:$PATH' }
-set :passenger_restart_command, '/path-to-passenger/bin/passenger-config restart-app'
-
+set :application, 'mmapp'
+set :repo_url, 'git@github.com:erolbah/mmdrachtentwebapp.git'
 
 # Default branch is :master
-# ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
+# ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-# set :deploy_to, '/var/www/my_app_name'
+set :deploy_to, '/var/www/mmapp'
+
+# RVM settings
+# set :rvm_type, :user
+# set :rvm_ruby_version, '2.2.3'
 
 # Default value for :scm is :git
 # set :scm, :git
@@ -30,10 +27,10 @@ set :passenger_restart_command, '/path-to-passenger/bin/passenger-config restart
 # set :pty, true
 
 # Default value for :linked_files is []
-# set :linked_files, fetch(:linked_files, []).push('config/database.yml')
+# set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/secrets.yml')
 
 # Default value for linked_dirs is []
-# set :linked_dirs, fetch(:linked_dirs, []).push('bin', 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system')
+# set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system')
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
