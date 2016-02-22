@@ -2,7 +2,7 @@
 lock '3.4.0'
 
 set :application, 'mmapp'
-set :repo_url, 'git@github.com:erolbah/mmdrachtentwebapp.git'
+set :repo_url, 'https://github.com/erolbah/mmdrachtentwebapp.git'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
