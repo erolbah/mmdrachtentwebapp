@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'devise', '~> 3.5', '>= 3.5.3'
 gem 'simple_form', '~> 3.2'
-gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
+gem 'bootstrap-sass', '~> 3.4'
 gem 'haml', '~> 4.0', '>= 4.0.7'
 gem 'rails', '4.2.4'
 gem 'sqlite3'
